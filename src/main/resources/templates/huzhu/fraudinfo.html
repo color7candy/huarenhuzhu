@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>华人互助网 </title>
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/huzhu.css" rel="stylesheet">
+    <link href="/resources/css/theme.css" rel="stylesheet">
+    <link href="/resources/css/index.css" rel="stylesheet">
+    <link href="/resources/summernote/summernote-lite.min.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+        </path>
+      </symbol>
+    </svg>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+        <div class="d-lg-none" style="width: 1.5rem;">
+        </div>
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/huzhu/home" aria-label="">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+            <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+              <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+            </g>
+          </svg>
+        </a>
+        <div class="">
+          <button class="navbar-toggler d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
+          </button>
+        </div>
+        <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+          <div class="offcanvas-header px-4 pb-0">
+            <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">华人互助</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar">
+            </button>
+          </div>
+          <div class="offcanvas-body p-4 pt-0 p-lg-0">
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/resort">互助</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/liveorfraud">日常</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/fraud">骗子</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/report">发布</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/user">个人</a>
+              </li>
+            </ul>
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="beforeLogin" th:if="${session.user} == null">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/login" target="_self" rel="noopener">
+                  登录
+                </a>
+              </li>
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <hr class="d-lg-none my-2 text-white-50">
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/register" target="_self" rel="noopener">
+                  注册
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="afterLogin" th:if="${session.user} != null">
+              <li class="nav-item dropdown">
+                <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                  <img  class="rounded-circle mr-1" width="30" height="30"
+                        th:src="@{${#strings.isEmpty(session.user.imagepath)}?'http://www.huarenhuzhu.com/resources/image/defaultsalt.png':${session.user.imagepath}}"
+                        alt="image">
+                  <input hidden="hidden" id="userid" th:value="${session.user.id}">
+                  <input hidden="hidden" id="username" th:value="${session.user.username}">
+                  <input hidden="hidden" id="password" th:value="${session.user.password}">
+                  <span class="d-lg-none" aria-hidden="true"></span><label class="text-white" th:text="@{${#strings.isEmpty(session.user.nickname)}?'&nbsp;':${session.user.nickname}}"></label><span class="visually-hidden" ></span><span class="visually-hidden"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">个人中心</h6></li>
+
+                  <li><a class="dropdown-item" href="/huzhu/user">个人</a></li>
+                  <li><a class="dropdown-item" href="/huzhu/reset">更改密码</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/huzhu/loginout">退出登录</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="messageModal" data-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <label id="messageModalLabel"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">添加评论</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- 评论输入框 -->
+            <div class="mb-3">
+              <textarea class="form-control rounded-3" id="summernote" placeholder="请输入评论："></textarea>
+              <div class="invalid-feedback">
+                请输入评论
+              </div>
+            </div>
+            <!-- 添加图片按钮 -->
+            <div class="mb-3">
+              <div class="row col-12" id="imagearray">
+                <div class="col-sm-2" id="addimage">
+                  <button class="btn btn-primary" id="addimagebtn" style="font-size: 10px;width: 50px;height: 50px;">添加图片</button>
+                </div>
+              </div>
+              <input type="file" id="fileToUpload" style="display: none;" onchange="uploadFile()">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- 提交按钮 -->
+            <button type="button" class="btn btn-primary" id="commit">提交</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="bd-masthead mb-3" >
+        <div class="modal-content" role="document" id="content">
+          <input hidden="hidden" id="idData" th:value="${fraud.id}">
+          <input hidden="hidden" id="useridData" th:value="${fraud.userid}">
+          <input hidden="hidden" id="titleData" th:value="${fraud.title}">
+          <input hidden="hidden" id="fraudNameData" th:value="${fraud.fraudName}">
+          <input hidden="hidden" id="fraudTypeData" th:value="${fraud.fraudType}">
+          <input hidden="hidden" id="fraudTimeData" th:value="${fraud.fraudTime}">
+          <input hidden="hidden" id="descriptionData" th:value="${fraud.description}">
+          <input hidden="hidden" id="addressData" th:value="${fraud.address}">
+          <input hidden="hidden" id="contactData" th:value="${fraud.contact}">
+          <input hidden="hidden" id="imagepathData" th:value="${fraud.imagepath}">
+          <input hidden="hidden" id="imagearrayData" th:value="${fraud.imagearray}">
+          <input hidden="hidden" id="fraudMethodData" th:value="${fraud.fraudMethod}">
+          <input hidden="hidden" id="amountData" th:value="${fraud.amount}">
+          <div class="row col-lg-12">
+            <div class="col-sm-2">
+              <img  class="rounded-circle mr-1" id="userimage" width="50px" height="50px" alt="image">
+            </div>
+            <div class="col-sm-8">
+              <div>
+                <h4 id="title"></h4>
+              </div>
+              <div>
+                <label id="usernameandtime"></label>
+              </div>
+            </div>
+            <div class="col-sm-2" style="text-align: right;">
+              <a class="btn btn-secondary" id="isStar2" onclick="star2()" style="float:right;margin-right: 1% !important;">收藏</a>
+              <a class="btn btn-secondary" id="isStar3" onclick="star3()" style="float:right;margin-right: 1% !important;">举报</a>
+            </div>
+            <hr class="my-3">
+            <div id="carousel" class="carousel slide container col-sm-6" data-bs-ride="carousel">
+
+            </div>
+            <div class="col-sm-6">
+              <div class="col-lg-12 row">
+                <div class="col-sm-12" style="margin-top: 60px">
+                  <h4 id="type" th:text="'类型：'+${fraud.fraudType}"></h4>
+                </div>
+                <div class="col-sm-12" style="margin-top: 60px">
+                  <h4 id="fraudMethod" th:text="'手段：'+${fraud.fraudMethod}"></h4>
+                </div>
+                <div class="col-sm-12" style="margin-top: 60px">
+                  <h4 id="contact" th:text="'联系方式：'+${fraud.contact}"></h4>
+                </div>
+                <div class="col-sm-12" style="margin-top: 60px">
+                  <h4 id="amount" th:text="'被骗金额：'+${fraud.amount}"></h4>
+                </div>
+                <div class="col-sm-12" style="margin-top: 60px">
+                  <h4 id="address" th:text="'地址：'+${fraud.address}"></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div id="description" th:utext="${fraud.description}">
+
+              </div>
+            </div>
+            <hr class="my-3">
+            <div class="col-sm-6">
+              <a class="btn btn-secondary" id="isstar1" onclick="star1()" style="float:left;margin-left: 1% !important;">点赞</a>
+            </div>
+            <div class="col-sm-6" style="text-align: right;">
+              <a class="btn btn-secondary" id="iscontent" onclick="content1()" style="float:right;margin-right: 1% !important;">回复</a>
+            </div>
+            <hr class="my-3">
+            <div class="row col-lg-12" id="content1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark font-weight-light text-white-55 pt-11 pb-5">
+      <div class="container">
+        <div class="row justify-content-md-between">
+          <div class="col-md-12 col-lg-4 mb-4 mr-lg-auto">
+            <a class="navbar-brand mb-3 text-white" href="/huzhu/home" aria-label="">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+                <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+                  <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+                </g>
+              </svg>&nbsp;华人互助网
+            </a>
+            <p class="small font-weight-light mb-3">为广大华人提供一个安全可靠的平台，<br>互相帮助，共同抵制各种诈骗</p>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-2">
+            <h4 class="h6 text-white mb-3">友情链接</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="https://www.incnjp.com" target="_blank">小春网</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://suumo.jp" target="_blank">Suumo</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://www.ur-net.go.jp/" target="_blank">UR团地</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://jp.mercari.com/" target="_blank">メルカリ</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-3">
+            <h4 class="h6 text-white mb-3">关于</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/introduction">网站协议</a></li>
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/about">关于我们</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-3 mb-4 order-lg-4">
+            <h4 class="h6 text-white mb-3">联系我们</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">邮箱:3351902681@qq.com</li>
+              <li class="mb-2">客服微信</li>
+              <li class="mb-2"><img width="100" height="100" src="http://www.huarenhuzhu.com/resources/image/wechat.png"/></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-5 opacity-10">
+        <div class="col text-md-center">
+          <p class="small font-weight-light mb-0">© 2023
+            <a class="link-white-55" href="/huzhu/home">&nbsp;&nbsp;华人互助网</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/resources/js/bootstrap.bundle.min.js"></script>
+  <script src="/resources/js/index.js"></script>
+  <script src="/resources/js/jquery.js"></script>
+  <script src="/resources/summernote/summernote-lite.min.js"></script>
+  <script src="/resources/summernote/lang/summernote-zh-CN.js"></script>
+  <script>
+    var count = 1;
+    var imageCount = 0;
+    var imagePathArray = {};
+    $("#addimagebtn").bind("click",function (){
+      document.getElementById('fileToUpload').click();
+    });
+    function uploadFile() {
+      var fileInput = document.getElementById("fileToUpload");
+      var file = fileInput.files[0];
+      if (file.type.indexOf('image') === -1) {
+        alert('请选择图片文件！');
+        return;
+      }
+      var formData = new FormData();
+      formData.append("file", file);
+      fetch('/resort/upload?time='+new Date(), {method: 'POST', body: formData})
+              .then(response => response.text())
+              .then(result => {
+                rs = JSON.parse(result);
+                if (rs.isError == "true"){
+                  alert("图片上传错误");
+                }else {
+                  imageCount = imageCount + 1;
+                  var str ="imagepath" + count;
+                  imagePathArray[str] = rs.path;
+                  $("#addimage").before("<div  class=\"col-sm-2 " + str + "\">\n" + "<img src=\"" + rs.path + "\" style='width: 50px;height: 50px;'>\n" + "</div>");
+                  $("."+str).bind("click",function (){
+                    $("."+str).remove();
+                    imagePathArray[str] = "";
+                    imageCount = imageCount -1;
+                    if (imageCount <= 11){
+                      $("#addimage").show();
+                    }
+                  });
+                  if (imageCount > 11){
+                    $("#addimage").hide();
+                  }
+                  count = count + 1;
+                }
+              }).catch(error => {
+        alert("图片上传错误");
+      });
+    }
+    $('#summernote').summernote({
+      placeholder: '请输入评论：',
+      tabsize: 2,
+      lang:'zh-CN',
+      height: 150,
+      toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'underline', 'clear']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['table', ['table']],
+        ['insert', ['link', 'picture', 'video']],
+        ['view', ['fullscreen', 'codeview', 'help']]
+      ]
+    });
+
+    $.post("/fraud/searchuser",{"userid":$("#useridData").val()},function (rs){
+      var contentImage = "http://www.huarenhuzhu.com/resources/image/defaultsalt.png";
+      if (rs.data.imagepath.length > 0){
+        contentImage = rs.data.imagepath;
+      }
+      $("#userimage").attr("src", contentImage);
+    })
+    var contentTime = new Date($("#fraudTimeData").val());
+    var currentTime = new Date();
+    var timeDiff = currentTime.getTime() - contentTime.getTime();
+    var hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+    var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    var weeksDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 7));
+    if (weeksDiff > 0) {
+      timeresult = $("#fraudTimeData").val().substring(0, 10);
+    } else if (daysDiff > 0) {
+      timeresult = daysDiff + "天前";
+    } else if (hoursDiff > 0) {
+      timeresult = hoursDiff +"小时前";
+    } else {
+      timeresult = "刚刚";
+    }
+    var prohtml="";
+    prohtml+="<div class=\"carousel-indicators\">";
+    if ($("#imagepathData").val().length > 0){
+      prohtml +=" <button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\"></button>";
+    }
+    if($("#imagearrayData").val().length > 0){
+      var arr = $("#imagearrayData").val().split(",");
+      for (let i = 0; i < arr.length; i++) {
+        var j = i+1;
+        if (arr[i].length > 0) {
+          prohtml += "<button type=\"button\" data-bs-target=\"#carousel\" data-bs-slide-to=\"" + j +
+                  "\" class=\"\"></button>";
+        }
+      }
+    }
+    prohtml+="</div><div class=\"carousel-inner \">";
+    if ($("#imagepathData").val().length > 0){
+      prohtml +="<div class=\"carousel-item active\">\n" +
+              "                  <img decoding=\"async\"  class=\"d-block\" src='" +$("#imagepathData").val()+
+              "' style=\"width:100%;height: 40vw;\">\n" +
+              "                </div>";
+    }
+    if($("#imagearrayData").val().length > 0){
+      var arr = $("#imagearrayData").val().split(",");
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > 0) {
+          prohtml += "<div class=\"carousel-item\">\n" +
+                  "                  <img decoding=\"async\"  class=\"d-block\" src='" + arr[i] +
+                  "' style=\"width:100%;height: 40vw;\">\n" +
+                  "                </div>";
+        }
+      }
+    }
+    prohtml+="</div>\n" +
+            "              <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"prev\">\n" +
+            "                <span class=\"carousel-control-prev-icon\"></span>\n" +
+            "              </button>\n" +
+            "              <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carousel\" data-bs-slide=\"next\">\n" +
+            "                <span class=\"carousel-control-next-icon\"></span>\n" +
+            "              </button>";
+    $("#carousel").html(prohtml);
+    prohtml = "";
+    $("#title").text($("#titleData").val());
+    $("#usernameandtime").text($("#fraudNameData").val()+" 发布于："+timeresult);
+    $.post("/fraud/searchstar",{"id":$("#idData").val()},function (rs){
+      for (let i = 0; i < rs.data.length; i++) {
+        if (rs.data[i].isstar==1){
+          if(rs.data[i].userid==$("#userid").val()){
+
+            if ($("#isstar1").hasClass('btn-secondary')) {
+              $("#isstar1").text("已点赞");
+              $("#isstar1").removeClass('btn-secondary').addClass('btn-info');
+            }
+          }else {
+            if ($("#isstar1").hasClass('btn-info')) {
+              $("#isstar1").text("点赞");
+              $("#isstar1").removeClass('btn-info').addClass('btn-secondary');
+            }
+          }
+        }
+        if (rs.data[i].isstar==2){
+          if(rs.data[i].userid==$("#userid").val()){
+
+            if ($("#isStar2").hasClass('btn-secondary')) {
+              $("#isStar2").text("已收藏");
+              $("#isStar2").removeClass('btn-secondary').addClass('btn-info');
+            }
+          }else {
+            if ($("#isStar2").hasClass('btn-info')) {
+              $("#isStar2").text("收藏");
+              $("#isStar2").removeClass('btn-info').addClass('btn-secondary');
+            }
+          }
+        }
+        if (rs.data[i].isstar==3){
+          if(rs.data[i].userid==$("#userid").val()){
+            if ($("#isStar3").hasClass('btn-secondary')) {
+              $("#isStar3").text("已举报");
+              $("#isStar3").removeClass('btn-secondary').addClass('btn-info');
+            }
+          }else {
+
+            if ($("#isStar3").hasClass('btn-info')) {
+              $("#isStar3").text("举报");
+              $("#isStar3").removeClass('btn-info').addClass('btn-secondary');
+            }
+          }
+        }
+      }
+    })
+    var contentcontentid="";
+    $.ajaxSettings.async = false;
+    $.post("/fraud/searchcontent",{"id":$("#idData").val()},function (rs){
+
+      for (let i = 0; i < rs.data.length; i++) {
+        var proHtml = "";
+        $.post("/fraud/searchuser",{"userid":rs.data[i].userid},function (rs) {
+          proHtml+=" <div class=\"col-sm-2\"><img class=\"rounded-circle mr-1\" width='50px' height='50px' src='" +rs.data.imagepath+ "'></div>\n";
+          proHtml+="<div class=\"col-sm-8\"><label>" + rs.data.nickname +
+                  "</label>";
+        });
+
+        var timeresult = "未知";
+        if (rs.data[i].contentTime.length > 0){
+          var contentTime = new Date(rs.data[i].contentTime);
+          var currentTime = new Date();
+          var timeDiff = currentTime.getTime() - contentTime.getTime();
+          var hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+          var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+          var weeksDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 7));
+          if (weeksDiff > 0) {
+            timeresult = rs.data[i].contentTime.substring(0, 10);
+          } else if (daysDiff > 0) {
+            timeresult = daysDiff + "天前";
+          } else if (hoursDiff > 0) {
+            timeresult = hoursDiff +"小时前";
+          } else {
+            timeresult = "刚刚";
+          }
+        }
+        contentcontentid = rs.data[i].id;
+        proHtml+= "              <label>回复于：" + timeresult + "</label>\n" +
+                "                <div><label>" + rs.data[i].content +
+                "</label></div>\n";
+        proHtml +="<div>";
+        if ( rs.data[i].contentImage.length > 0){
+          proHtml+="<img style=\"width:40%;height: 20vw;\" src=\"" + rs.data[i].contentImage +
+                  "\">";
+        }
+        if (rs.data[i].contentImagearray.length > 0){
+          var arr = rs.data[i].contentImagearray.split(",");
+          for (let i = 0; i < arr.length; i++) {
+            if (arr[i].length > 0){
+              proHtml += "<img style=\"width:40%;height: 20vw;\" src=\"" + arr[i] +
+                      "\">";
+            }
+          }
+        }
+        proHtml += "</div><div class=\"row col-lg-12\" id='contentcontent" + rs.data[i].id +
+                "'></div>\n" +
+                "\n" +
+                "              </div><div class=\"col-sm-2\" style=\"text-align: right;\">\n" +
+                "                  <a class=\"btn btn-secondary\" id=\"\" onclick=\" content2(" + rs.data[i].id +
+                ") \" style=\"float:right;margin-right: 1% !important;\">回复</a>\n" +
+                "                </div>\n";
+        $("#content1").append(proHtml);
+        serchComment(rs.data[i].id);
+      }
+    })
+    $.ajaxSettings.async = true;
+    function serchComment(commentid) {
+      $.post("/fraud/searchcontentcontent",{"id":commentid},function (rs){
+
+        for (let i = 0; i < rs.data.length; i++) {
+          var proHtml = "";
+          $.post("/fraud/searchuser",{"userid":rs.data[i].userid},function (rs) {
+            proHtml+=" <div class=\"col-sm-2\"><img class=\"rounded-circle mr-1\" width='50px' height='50px' src='" +rs.data.imagepath+ "'></div>\n";
+            proHtml+="<div class=\"col-sm-8\"><label>" + rs.data.nickname +
+                    "</label>";
+          });
+          var timeresult = "未知";
+          if (rs.data[i].contentTime.length > 0){
+            var contentTime = new Date(rs.data[i].contentTime);
+            var currentTime = new Date();
+            var timeDiff = currentTime.getTime() - contentTime.getTime();
+            var hoursDiff = Math.floor(timeDiff / (1000 * 60 * 60));
+            var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            var weeksDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24 * 7));
+            if (weeksDiff > 0) {
+              timeresult = rs.data[i].contentTime.substring(0, 10);
+            } else if (daysDiff > 0) {
+              timeresult = daysDiff + "天前";
+            } else if (hoursDiff > 0) {
+              timeresult = hoursDiff +"小时前";
+            } else {
+              timeresult = "刚刚";
+            }
+          }
+          proHtml+= "              <label>回复于：" + timeresult + "</label>\n" +
+                  "                <div><label>" + rs.data[i].content +
+                  "</label></div>\n";
+          proHtml +="<div>";
+          if ( rs.data[i].contentImage.length > 0){
+            proHtml+="<img style=\"width:40%;height: 20vw;\" src=\"" + rs.data[i].contentImage +
+                    "\">";
+          }
+          if (rs.data[i].contentImagearray.length > 0){
+            var arr = rs.data[i].contentImagearray.split(",");
+            for (let i = 0; i < arr.length; i++) {
+              if (arr[i].length > 0){
+                proHtml += "<img style=\"width:40%;height: 20vw;\" src=\"" + arr[i] +
+                        "\">";
+              }
+            }
+          }
+
+          proHtml += "         </div>     </div><div class=\"col-sm-2\" style=\"text-align: right;\">\n" +
+                  "                  <a class=\"btn btn-secondary\" id=\"\" onclick=\" content2(" + rs.data[i].id +
+                  ") \" style=\"float:right;margin-right: 1% !important;\">回复</a>\n" +
+                  "                </div>\n";
+          serchComment(rs.data[i].id);
+          var str = "#contentcontent" + contentcontentid;
+          $(str).append(proHtml);
+        }
+
+      })
+    }
+    var contentid;
+    var contentType;
+    function content1() {
+      if ($("#userid").val() == null){
+        $("#messageModalLabel").text("抱歉，该功能需要先登录后才能使用。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+      }else {
+        contentid = $("#idData").val();
+        contentType = "fraud";
+        $('#myModal').modal('show');
+      }
+    }
+    function content2(id) {
+      if ($("#userid").val() == null){
+        $("#messageModalLabel").text("抱歉，该功能需要先登录后才能使用。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+      }else {
+        contentid = id;
+        contentType = "content";
+        $('#myModal').modal('show');
+      }
+    }
+    $("#commit").click(function () {
+      if ($("#summernote").val().length <= 0){
+        $('#myModal').modal('hide');
+        $("#messageModalLabel").text("抱歉， 请输入数据。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+        return;
+      }
+      var imagePathStr = "";
+      for (var imagePath in imagePathArray) {
+        if (imagePathStr.length > 0){
+          imagePathStr = imagePathStr + imagePathArray[imagePath] +",";
+        }else {
+          imagePathStr = imagePathArray[imagePath] +",";
+        }
+      }
+      $.post("/content/commit",{"id":contentid,"userid":$("#userid").val(),"content":$("#summernote").val(),"contenttype":contentType,"image":imagePathStr},function (rs) {
+        if (rs.code != 200) {
+          $("#messageModalLabel").text("抱歉，保存失败。");
+          $('#messageModal').modal('show');
+          setTimeout(function(){
+            $('#messageModal').modal('hide');
+          }, 3000);
+        }else {
+          location.reload();
+        }
+      })
+    })
+    function star1(){
+      if ($("#userid").val() == null){
+        $("#messageModalLabel").text("抱歉，该功能需要先登录后才能使用。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+      }else {
+        var isadd = "";
+        var id = "#isstar1";
+        if ($(id).hasClass('btn-secondary')) {
+          isadd = "1";
+          $(id).removeClass('btn-secondary').addClass('btn-info');
+        } else if ($(id).hasClass('btn-info')) {
+          isadd = "0";
+          $(id).removeClass('btn-info').addClass('btn-secondary');
+        }
+        var param = {
+          username: $("#username").val(),
+          password: $("#password").val(),
+          typeid: $("#idData").val(),
+          isadd: isadd,
+          isStar: "1",
+          type: "fraud",
+        }
+        $.post("/star/changeStar", param, function (rs) {
+          if (rs.code != 200) {
+            if (isadd == "1") {
+              $(id).removeClass('btn-info').addClass('btn-secondary');
+            } else {
+              $(id).removeClass('btn-secondary').addClass('btn-info');
+            }
+          }
+          isStarClick = 0;
+        })
+      }
+    }
+    function star2(){
+      if ($("#userid").val() == null){
+        $("#messageModalLabel").text("抱歉，该功能需要先登录后才能使用。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+      }else {
+        var isadd = "";
+        var id = "#isStar2";
+        if ($(id).hasClass('btn-secondary')) {
+          isadd = "1";
+          $(id).removeClass('btn-secondary').addClass('btn-info');
+        } else if ($(id).hasClass('btn-info')) {
+          isadd = "0";
+          $(id).removeClass('btn-info').addClass('btn-secondary');
+        }
+        var param = {
+          username: $("#username").val(),
+          password: $("#password").val(),
+          typeid: $("#idData").val(),
+          isadd: isadd,
+          isStar: "2",
+          type: "fraud",
+        }
+        $.post("/star/changeStar", param, function (rs) {
+          if (rs.code != 200) {
+            if (isadd == "1") {
+              $(id).removeClass('btn-info').addClass('btn-secondary');
+            } else {
+              $(id).removeClass('btn-secondary').addClass('btn-info');
+            }
+          }
+          isStarClick = 0;
+        })
+      }
+    }
+    function star3() {
+      if ($("#userid").val() == null){
+        $("#messageModalLabel").text("抱歉，该功能需要先登录后才能使用。");
+        $('#messageModal').modal('show');
+        setTimeout(function(){
+          $('#messageModal').modal('hide');
+        }, 3000);
+      }else {
+        var isadd = "";
+        var id = "#isStar3";
+        if ($(id).hasClass('btn-secondary')) {
+          isadd = "1";
+          $(id).removeClass('btn-secondary').addClass('btn-info');
+        } else if ($(id).hasClass('btn-info')) {
+          isadd = "0";
+          $(id).removeClass('btn-info').addClass('btn-secondary');
+        }
+        var param = {
+          username: $("#username").val(),
+          password: $("#password").val(),
+          typeid: $("#idData").val(),
+          isadd: isadd,
+          isStar: "3",
+          type: "fraud",
+        }
+        $.post("/star/changeStar", param, function (rs) {
+          if (rs.code != 200) {
+            if (isadd == "1") {
+              $(id).removeClass('btn-info').addClass('btn-secondary');
+            } else {
+              $(id).removeClass('btn-secondary').addClass('btn-info');
+            }
+          }
+          isStarClick = 0;
+        })
+      }
+    }
+  </script>
+</html>

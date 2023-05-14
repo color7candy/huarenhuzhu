@@ -1,0 +1,259 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>华人互助网 日常</title>
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/huzhu.css" rel="stylesheet">
+    <link href="/resources/css/theme.css" rel="stylesheet">
+    <link href="/resources/css/index.css" rel="stylesheet">
+    <link href="/resources/css/sidebars.css" rel="stylesheet">
+    <style>
+      .floating-buttons {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+      .main-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #007bff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+        </path>
+      </symbol>
+    </svg>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+        <div class="">
+          <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" onclick="document.getElementById('body').style.cssText = '';" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="#ffffff" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+            </svg>
+          </button>
+        </div>
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/huzhu/home" aria-label="">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+            <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+              <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+            </g>
+          </svg>
+        </a>
+        <div class="">
+          <button class="navbar-toggler d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
+          </button>
+        </div>
+        <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+          <div class="offcanvas-header px-4 pb-0">
+            <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">华人互助</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar">
+            </button>
+          </div>
+          <div class="offcanvas-body p-4 pt-0 p-lg-0">
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/resort">互助</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="/huzhu/liveorfraud">日常</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/fraud">骗子</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/report">发布</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/user">个人</a>
+              </li>
+            </ul>
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="beforeLogin" th:if="${session.user} == null">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/login" target="_self" rel="noopener">
+                  登录
+                </a>
+              </li>
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <hr class="d-lg-none my-2 text-white-50">
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/register" target="_self" rel="noopener">
+                  注册
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="afterLogin" th:if="${session.user} != null">
+              <li class="nav-item dropdown">
+                <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                  <img  class="rounded-circle mr-1" width="30" height="30"
+                        th:src="@{${#strings.isEmpty(session.user.imagepath)}?'http://www.huarenhuzhu.com/resources/image/defaultsalt.png':${session.user.imagepath}}"
+                        alt="image">
+                  <span class="d-lg-none" aria-hidden="true"></span><label class="text-white" th:text="@{${#strings.isEmpty(session.user.nickname)}?'&nbsp;':${session.user.nickname}}"></label><span class="visually-hidden" ></span><span class="visually-hidden"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">个人中心</h6></li>
+
+                  <li><a class="dropdown-item" href="/huzhu/user">个人</a></li>
+                  <li><a class="dropdown-item" href="/huzhu/reset">更改密码</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/huzhu/loginout">退出登录</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="floating-buttons">
+      <button class="main-button btn-secondary" onclick="location.href='/huzhu/report'">发布</button>
+    </div>
+    <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+      <aside class="bd-sidebar">
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">防骗/生活</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+          </div>
+          <div id="fraud">
+          </div>
+          <div> <ul class="border-top"></ul></div>
+          <div id="live">
+          </div>
+          <div> <ul class="border-top"></ul></div><div><ul>小心防骗<ul></ul></ul></div>
+        </div>
+      </aside>
+      <div class="bd-masthead mb-3 text-center" id="content">
+
+      </div>
+    </div>
+
+    <footer class="bg-dark font-weight-light text-white-55 pt-11 pb-5">
+      <div class="container">
+        <div class="row justify-content-md-between">
+          <div class="col-md-12 col-lg-4 mb-4 mr-lg-auto">
+            <a class="navbar-brand mb-3 text-white" href="/huzhu/home" aria-label="">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+                <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+                  <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+                </g>
+              </svg>&nbsp;华人互助网
+            </a>
+            <p class="small font-weight-light mb-3">为广大华人提供一个安全可靠的平台，<br>互相帮助，共同抵制各种诈骗</p>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-2">
+            <h4 class="h6 text-white mb-3">友情链接</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="https://www.incnjp.com" target="_blank">小春网</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://suumo.jp" target="_blank">Suumo</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://www.ur-net.go.jp/" target="_blank">UR团地</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://jp.mercari.com/" target="_blank">メルカリ</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-3">
+            <h4 class="h6 text-white mb-3">关于</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/introduction">网站协议</a></li>
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/about">关于我们</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-lg-3 mb-4 order-lg-4">
+            <h4 class="h6 text-white mb-3">联系我们</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">邮箱:3351902681@qq.com</li>
+              <li class="mb-2">客服微信</li>
+              <li class="mb-2"><img width="100" height="100" src="http://www.huarenhuzhu.com/resources/image/wechat.png"/></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-5 opacity-10">
+        <div class="col text-md-center">
+          <p class="small font-weight-light mb-0">© 2023
+            <a class="link-white-55" href="/huzhu/home">&nbsp;&nbsp;华人互助网</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/resources/js/bootstrap.bundle.min.js"></script>
+  <script src="/resources/js/index.js"></script>
+  <script src="/resources/js/jquery.js"></script>
+  <script src="/resources/js/sidebars.js"></script>
+  <script>
+    $.get("/liveorfraud/searchfraud", function (rs) {
+      var fraud = "";
+      for (var i = 0; i < rs.data.length; i++) {
+        if (fraud.length<=0){
+          fraud += "<nav class=\"bd-links w-100\" id=\"bd-docs-nav\" aria-label=\"Docs navigation\">\n" + "<ul class=\"bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2\">\n" + "<li class=\"mb-1\">";
+          fraud +="<button class=\"btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#" +rs.data[i].liveorfraud+"collapse"+ i+ "\" aria-expanded=\"true\">" + rs.data[i].type + "</button><div class=\"collapse show\" id=\"" +rs.data[i].liveorfraud+"collapse"+i+ "\" style=\"\">\n" + "<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n" + "<li><a href='#' id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"bd-links-link d-inline-block rounded active\" aria-current=\"page\">" + rs.data[i].title + "</a></li>";
+        }else {
+          if (rs.data[i].type != rs.data[i-1].type){
+            fraud +="</ul>\n" + "</div>\n" + "</li>\n" + "<li class=\"mb-1\">\n" + "<button class=\"btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#" +rs.data[i].liveorfraud+"collapse"+i+ "\" aria-expanded=\"false\">" + rs.data[i].type + "</button>\n" + "<div class=\"collapse\" id=\"" +rs.data[i].liveorfraud+"collapse"+i+ "\" style=\"\">\n" + "<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n" + "<li><a href='#' id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"link-dark d-inline-flex text-decoration-none rounded\">" + rs.data[i].title+ "</a></li>";
+          }else {
+            fraud += "<li><a href='#' id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"link-dark d-inline-flex text-decoration-none rounded\">" + rs .data[i].title+ "</a></li>";
+          }
+        }
+      }
+      fraud +=" </ul>\n" + "</div>\n" + "</li>\n" + "</ul>\n" + "</nav>";
+      $('#fraud').html(fraud);
+      changcontent(rs.data[0]);
+    })
+    $.get("/liveorfraud/searchlive", function (rs) {
+      var live = "";
+      for (var i = 0; i < rs.data.length; i++) {
+        if (live.length <= 0){
+          live +="<nav class=\"bd-links w-100\" id=\"bd-docs-nav\" aria-label=\"Docs navigation\">\n" + "<ul class=\"bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2\">\n" + "\n" + "<li class=\"mb-1\">";
+          live +=" <button class=\"btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#" +rs.data[i].liveorfraud+"collapse"+i + "\" aria-expanded=\"false\">" +rs.data[i].type+ "</button>\n" + "<div class=\"collapse\" id=\"" +rs.data[i].liveorfraud+"collapse"+i+ "\" style=\"\">\n" + "<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\"><li><a href='#' id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"link-dark d-inline-flex text-decoration-none rounded\">" + rs .data[i].title+ "</a></li>";
+        }else {
+          if (rs.data[i].type != rs.data[i-1].type){
+            live +="</ul>\n" + "</div>\n" + "</li>\n" + "<li class=\"mb-1\">\n" + "<button class=\"btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#" +rs.data[i].liveorfraud+"collapse"+i+ "\" aria-expanded=\"false\">" + rs.data[i].type + "</button>\n" + "<div class=\"collapse\" id=\"" +rs.data[i].liveorfraud +"collapse" +i+ "\" style=\"\">\n" + "<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n" + "<li><a href='#'  id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"link-dark d-inline-flex text-decoration-none rounded\">" + rs.data[i].title+ "</a></li>";
+          }else {
+            live += "<li><a href='#' id=\"" +rs.data[i].liveorfraud+rs.data[i].id+ "\" onclick='changcontent(" +JSON.stringify(rs.data[i]).replace(/'/g,"&quot;")+ ");' class=\"link-dark d-inline-flex text-decoration-none rounded\">" + rs .data[i].title+ "</a></li>";
+          }
+        }
+      }
+      live +=" </ul>\n" + "</div>\n" + "</li>\n" + "</ul>\n" + "</nav>";
+      $('#live').html(live);
+    })
+
+    function changcontent(data) {
+      var active = $("a.bd-links-link");
+      active.removeClass('active').removeClass('d-inline-block').removeClass('bd-links-link');
+      active.addClass('link-dark').addClass('d-inline-flex').addClass('text-decoration-none ');
+
+      var id = "#"+data.liveorfraud+ data.id;
+      if (!$(id).hasClass('active')){
+        $(id).addClass('active').addClass('d-inline-block').addClass('bd-links-link');
+        $(id).removeClass('link-dark').removeClass('d-inline-flex').removeClass('text-decoration-none ');
+      }
+      var proHtml = "";
+      proHtml += "<h5>" +data.title+ "</h5><div class='col-lg-12' style=\"width:90%;margin-left:5%\"><label>" + data.description+ "</label></div><div class='col-lg-12' style=\"width:90%;margin-left:5%\"><label>" +data.precaution+ "</label></div>";
+      if (data.imagepath != null && data.imagepath.length > 0){
+        proHtml+="<div class='col-lg-12' style=\"width:90%;margin-left:5%\"><img style='width: 100%; height:50vw;' src='" +data.imagepath+"'></div>";
+      }
+      if (data.imagearray.length > 0){
+        var arr = data.imagearray.split(",");
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i].length > 0){
+            proHtml += "<div class='col-lg-12' style=\"width:90%;margin-left:5%\"><img style=\"width: 100%; height:50vw;\" src=\"" + arr[i] + "\"></div>";
+          }
+        }
+      }
+      $("#content").html(proHtml);
+    }
+  </script>
+</html>

@@ -1,0 +1,589 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>华人互助网 举报</title>
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/css/huzhu.css" rel="stylesheet">
+    <link href="/resources/css/theme.css" rel="stylesheet">
+    <link href="/resources/css/index.css" rel="stylesheet">
+    <link href="/resources/summernote/summernote-lite.min.css" rel="stylesheet">
+  </head>
+  <body id="body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+        </path>
+      </symbol>
+    </svg>
+    <header class="navbar navbar-expand-lg bd-navbar sticky-top">
+      <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+        <div class="d-lg-none" style="width: 1.5rem;">
+        </div>
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="/huzhu/home" aria-label="">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+            <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+              <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+            </g>
+          </svg>
+        </a>
+        <div class="">
+          <button class="navbar-toggler d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#three-dots"></use></svg>
+          </button>
+        </div>
+        <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel" data-bs-scroll="true">
+          <div class="offcanvas-header px-4 pb-0">
+            <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">华人互助</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar">
+            </button>
+          </div>
+          <div class="offcanvas-body p-4 pt-0 p-lg-0">
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/resort">互助</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/liveorfraud">日常</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/fraud">骗子</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="/huzhu/report">发布</a>
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/user">个人</a>
+              </li>
+            </ul>
+            <hr class="d-lg-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="beforeLogin" th:if="${session.user} == null">
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/login" target="_self" rel="noopener">
+                  登录
+                </a>
+              </li>
+              <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                <hr class="d-lg-none my-2 text-white-50">
+              </li>
+              <li class="nav-item col-6 col-lg-auto">
+                <a class="nav-link py-2 px-0 px-lg-2" href="/huzhu/register" target="_self" rel="noopener">
+                  注册
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto" id="afterLogin" th:if="${session.user} != null">
+              <li class="nav-item dropdown">
+                <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                  <img  class="rounded-circle mr-1" width="30" height="30"
+                        th:src="@{${#strings.isEmpty(session.user.imagepath)}?'http://www.huarenhuzhu.com/resources/image/defaultsalt.png':${session.user.imagepath}}"
+                        alt="image">
+                  <span class="d-lg-none" aria-hidden="true"></span><label class="text-white" th:text="@{${#strings.isEmpty(session.user.nickname)}?'&nbsp;':${session.user.nickname}}"></label><span class="visually-hidden" ></span><span class="visually-hidden"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><h6 class="dropdown-header">个人中心</h6></li>
+
+                  <li><a class="dropdown-item" href="/huzhu/user">个人</a></li>
+                  <li><a class="dropdown-item" href="/huzhu/reset">更改密码</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/huzhu/loginout">退出登录</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="bd-masthead mb-3" >
+        <div class="nav nav-tabs" role="tablist" style="margin-left: 10% !important; margin-right: 10% !important;">
+          <button class="nav-link active" id="nav-resort-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" tabindex="0">互助</button>
+          <button class="nav-link" id="nav-liveorfraud-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1">日常</button>
+          <button class="nav-link" id="nav-fraud-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1">骗子</button>
+        </div>
+        <div class="modal-content" role="document" id="content">
+
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark font-weight-light text-white-55 pt-11 pb-5">
+      <div class="container">
+        <div class="row justify-content-md-between">
+          <div class="col-md-12 col-lg-4 mb-4 mr-lg-auto">
+            <a class="navbar-brand mb-3 text-white" href="/huzhu/home" aria-label="">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"width="40" height="30" viewBox="0 0 1280.000000 960.000000">
+                <g transform="translate(0.000000,1160.000000) scale(0.100000,-0.150000)"fill="#ffffff" stroke="none">
+                  <path d="M6620 7299 c-115 -17 -235 -88 -430 -258 -201 -175 -482 -374 -615 -435 -237 -110 -535 -270 -620 -332 -33 -24 -105 -67 -160 -95 -55 -28 -114 -59 -131 -70 -29 -18 -40 -18 -224 -8 -107 6 -219 17 -249 25 -96 25 -498 10 -614 -22 -29 -8 -81 -19 -117 -24 -36 -6 -88 -22 -116 -35 -57 -28 -198 -58 -379 -81 -66 -9 -134 -22 -152 -31 -18 -8 -60 -41 -95 -72 -35 -32 -81 -64 -103 -71 -22 -7 -83 -33 -135 -58 -109 -51 -187 -74 -430 -131 -464 -108 -402 -101 -1070 -120 -212 -6 -459 -15 -550 -21 -91 -5 -225 -13 -297 -17 l-133 -6 0 -1224 0 -1223 58 -1 c31 -1 59 -1 62 -1 3 0 127 3 275 7 184 4 316 13 415 27 80 11 206 21 280 22 120 1 188 -1 455 -18 39 -2 117 -7 175 -10 304 -18 651 -85 1185 -231 72 -19 148 -39 170 -44 111 -26 352 -94 445 -126 58 -20 173 -59 255 -87 186 -62 277 -95 335 -121 178 -79 425 -172 538 -203 53 -14 174 -48 267 -76 153 -45 232 -70 475 -156 68 -24 88 -26 225 -26 200 0 410 19 483 43 67 23 275 129 342 174 52 36 323 249 360 283 37 35 77 66 145 113 33 22 103 71 155 107 128 88 149 102 221 148 33 22 67 50 75 62 8 12 43 41 77 64 34 24 71 51 82 61 11 11 52 42 90 71 39 28 86 68 106 87 54 55 114 109 231 209 120 103 102 98 233 59 64 -19 79 -29 165 -111 67 -64 116 -101 164 -124 241 -117 585 -113 1102 14 491 119 738 297 998 717 42 67 55 81 104 106 125 63 404 129 637 150 66 7 163 17 215 24 52 6 147 12 210 12 121 0 117 1 355 -75 50 -16 140 -40 200 -54 61 -13 162 -40 225 -59 63 -20 136 -38 163 -42 l47 -7 0 1291 0 1291 -42 0 c-24 0 -88 -7 -143 -15 -55 -8 -185 -22 -290 -30 -104 -9 -239 -20 -299 -26 -187 -18 -640 -16 -801 4 -318 40 -411 48 -510 42 -108 -7 -155 -18 -274 -64 -42 -17 -103 -35 -135 -41 -33 -5 -89 -23 -125 -39 -74 -33 -211 -61 -296 -61 -61 0 -184 23 -400 75 -77 19 -158 37 -180 40 -70 12 -279 95 -500 200 -38 18 -114 54 -167 79 -53 25 -100 46 -105 46 -16 0 -206 101 -405 216 -63 36 -179 86 -333 144 -55 20 -134 52 -175 69 -148 64 -286 74 -409 31 -59 -21 -80 -19 -291 35 -91 23 -217 46 -236 44 -5 -1 -34 -5 -64 -10z"/>
+                </g>
+              </svg>&nbsp;华人互助网
+            </a>
+            <p class="small font-weight-light mb-3">为广大华人提供一个安全可靠的平台，<br>互相帮助，共同抵制各种诈骗</p>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-2">
+            <h4 class="h6 text-white mb-3">友情链接</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="https://www.incnjp.com" target="_blank">小春网</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://suumo.jp" target="_blank">Suumo</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://www.ur-net.go.jp/" target="_blank">UR团地</a></li>
+              <li class="mb-2"><a class="link-white-55" href="https://jp.mercari.com/" target="_blank">メルカリ</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-2 mb-4 order-lg-3">
+            <h4 class="h6 text-white mb-3">关于</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/introduction">网站协议</a></li>
+              <li class="mb-2"><a class="link-white-55" href="/huzhu/about">关于我们</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-lg-3 mb-4 order-lg-4">
+            <h4 class="h6 text-white mb-3">联系我们</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">邮箱:3351902681@qq.com</li>
+              <li class="mb-2">客服微信</li>
+              <li class="mb-2"><img width="100" height="100" src="http://www.huarenhuzhu.com/resources/image/wechat.png"/></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-5 opacity-10">
+        <div class="col text-md-center">
+          <p class="small font-weight-light mb-0">© 2023
+            <a class="link-white-55" href="/huzhu/home">&nbsp;&nbsp;华人互助网</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/resources/js/bootstrap.bundle.min.js"></script>
+  <script src="/resources/js/index.js"></script>
+  <script src="/resources/js/jquery.js"></script>
+  <script src="/resources/summernote/summernote-lite.min.js"></script>
+  <script src="/resources/summernote/lang/summernote-zh-CN.js"></script>
+  <script>
+    var count = 1;
+    var imageCount = 0;
+    var imagePathArray = {};
+    $("#nav-resort-tab").bind("click",function (){
+       count = 1;
+       imageCount = 0;
+      var proHtml ="";
+      proHtml += "<div class=\"col-md-3\"><br></div>\n" + "<h4 class=\"mb-3 text-md-center\">发布互助</h4>\n" + "<div id=\"error\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label id=\"errorlabel\" class=\"text-error\">发布失败，注意是否已验证账户</label>\n" + "</div>\n" + "<div id=\"message\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label>发布成功，等待返回</label>\n" + "</div>\n" + "<form class=\"needs-validation\" id=\"resortfrom\" onsubmit=\"return false;\" enctype=\"multipart/form-data\" novalidate>\n" + "<div class=\"row g-3\" style=\"margin-left: 10% !important; margin-right: 10% !important;\">\n" + "\n" + "<hr class=\"my-4\">\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"title\" placeholder=\"\">\n" + "<label for=\"title\">请输入标题</label>\n" + "<div class=\"invalid-feedback\">\n" + "请输入标题\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"resortName\" placeholder=\"\">\n" + "<label for=\"resortName\">请输入昵称</label>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<select class=\"form-select\" id=\"resortType\">\n" + "<option value=\"\">请选择互助类型</option>\n" + "</select>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<div class=\"col-12 row\">\n" + "<div class=\"col-sm-6\">\n" + "<select class=\"form-select\" id=\"area\">\n" + "<option value=\"0\">请选择区域</option>\n" + "</select>\n" + "</div>\n" + "<div class=\" col-sm-6\">\n" + "<select class=\"form-select\" id=\"city\">\n" + "<option value=\"0\">请选择城市</option>\n" + "</select>\n" + "</div>\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"contact\" placeholder=\"\">\n" + "<label for=\"contact\">请输入联系方式</label>\n" + "</div>\n" + "<div class=\"form-floating  col-12\">\n" + "<textarea class=\"form-control rounded-3\" id=\"summernote\" placeholder=\"请输入具体内容：\"></textarea>\n" + "<div class=\"invalid-feedback\">\n" + "请输入具体内容\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<div class=\"row col-12\" id=\"imagearray\">\n" + "<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>\n" + "</div>\n" + "<input type=\"file\" id=\"fileToUpload\" style=\"display: none;\" onchange=\"uploadFile()\">\n" + "</div>\n" + "<hr class=\"my-4\">\n" + " <button class=\"w-100 btn btn-primary btn-lg\" id=\"reportbtn\">提交</button>\n" + "</div>\n" + "</form>\n" + "<div class=\"col-md-3\"><br></div>";
+      $("#content").html(proHtml);
+      $('#summernote').summernote({
+        placeholder: '请输入具体内容：',
+        tabsize: 2,
+        lang:'zh-CN',
+        height: 150,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+      $.get("/resources/json/japaneseAdress.json", function (data) {
+        var proHtml = '';
+        proHtml += '<option value="0">请选择区域</option>';
+        for (var i = 0; i < data.length; i++) {
+          proHtml += '<option value="' + data[i].code + '">' + data[i].name + '</option>';
+        }
+        $("#area").html(proHtml);
+        proHtml="";
+      });
+      $("#area").bind("change",function (){
+        var proHtml = '';
+        $.get("/resources/json/japaneseAdress.json", function (data) {
+
+          proHtml += '<option value="0">请选择城市</option>';
+          for (var i = 0; i < data.length; i++) {
+            if (data[i].code == $("#area").val()){
+              var citydata = data[i].childs;
+              for (let j = 0; j < citydata.length; j++) {
+                proHtml += '<option value="' + citydata[j].code + '">' + citydata[j].name + '</option>';
+              }
+            }
+          }
+          $("#city").html(proHtml);
+          proHtml="";
+        })
+      });
+      $.get("/type/searchresorttype",function (rs){
+        var proHtml = '';
+        proHtml += '<option value="0">请选择类型</option>';
+        for (var i = 0; i < rs.data.length; i++) {
+          proHtml += '<option value="' + rs.data[i].id + '">' + rs.data[i].type + '</option>';
+        }
+        $("#resortType").html(proHtml);
+        proHtml="";
+      });
+      $("#addimagebtn").bind("click",function (){
+        document.getElementById('fileToUpload').click();
+      });
+      $("#reportbtn").bind("click",function (){
+        if (!checksummernote() || !checktitle()){
+          $("#resortfrom").removeClass("was-validated");
+          return false;
+        }
+        var imagePathStr = "";
+        for (var imagePath in imagePathArray) {
+          if (imagePathStr.length > 0){
+            imagePathStr = imagePathStr + imagePathArray[imagePath] +",";
+          }else {
+            imagePathStr = imagePathArray[imagePath] +",";
+          }
+        }
+        var param = {
+          title     : $("#title").val(),
+          resortName: $("#resortName").val(),
+          area      : $("#area option:selected").text(),
+          city      : $("#city option:selected").text(),
+          resortType: $("#resortType option:selected").text(),
+          contact   : $("#contact").val(),
+          summernote: $("#summernote").val(),
+          imagePathStr:imagePathStr
+        };
+        $("#reportbtn").text("提交中...").attr("disabled","disabled").addClass("disabled");
+        $.post("/resort/resort",param,function(rs){
+          $("#reportbtn").text("提交").attr("disabled",false).removeClass("disabled");
+          if(rs.code != 200){
+            $("#resortfrom").removeClass("was-validated");
+            $("#title").val("");
+            $("#resortName").val("");
+            $("#resortType").val("0");
+            $("#area").val("0");
+            $("#city").val("0");
+            $("#contact").val("");
+            $("#summernote").val("");
+            $("#imagearray").html("<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>");
+            count = 1;
+            imageCount = 0;
+            imagePathArray = null;
+            checktitle();
+            checksummernote();
+            $("#error").show();
+            $("#message").hide();
+          }else{
+            $("#error").hide();
+            $("#resortfrom").hide();
+            $("#message").show();
+            setTimeout(function () {
+              location.href="/huzhu/report";
+            },5000);
+          }
+        });
+      });
+    });
+
+    $("#nav-liveorfraud-tab").bind("click",function (){
+      count = 1;
+      imageCount = 0;
+      var proHtml ="";
+      proHtml += " <div class=\"col-md-3\"><br></div>\n" + "<h4 class=\"mb-3 text-md-center\">发布日常</h4>\n" + "<div id=\"error\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label id=\"errorlabel\" class=\"text-error\">发布失败，注意是否已验证账户</label>\n" + "</div>\n" + "<div id=\"message\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label>发布成功，等待返回</label>\n" + "</div>\n" + "<form class=\"needs-validation\" id=\"liveorfraudfrom\" onsubmit=\"return false;\" enctype=\"multipart/form-data\" novalidate>\n" + "<div class=\"row g-3\" style=\"margin-left: 10% !important; margin-right: 10% !important;\">\n" + "<hr class=\"my-4\">\n" + "<div class=\"form-floating col-12\">\n" + "<select class=\"form-select\" id=\"liveorfraudType\">\n" + "<option value=\"\">请选择互助类型</option>\n" + "</select>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"title\" placeholder=\"\">\n" + "<label for=\"title\">请输入标题</label>\n" + "<div class=\"invalid-feedback\">\n" + "请输入标题\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating  col-12\">\n" + "<textarea class=\"form-control rounded-3\" id=\"summernote1\" placeholder=\"请输入描述：\"></textarea>\n" + "<div class=\"invalid-feedback\">\n" + "请输入描述\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating  col-12\">\n" + "<textarea class=\"form-control rounded-3\" id=\"summernote2\" placeholder=\"请输入内容：\"></textarea>\n" + "<div class=\"invalid-feedback\">\n" + "请输入内容\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<div class=\"row col-12\" id=\"imagearray\">\n" + "<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>\n" + "</div>\n" + "<input type=\"file\" id=\"fileToUpload\" style=\"display: none;\" onchange=\"uploadFile()\">\n" + "</div>\n" + "<hr class=\"my-4\">\n" + "<button class=\"w-100 btn btn-primary btn-lg\" id=\"liveorfraudbtn\">提交</button>\n" + "</div>\n" + "</form>\n" + "<div class=\"col-md-3\"><br></div>";
+      $("#content").html(proHtml);
+      $('#summernote1').summernote({
+        placeholder: '请输入描述比如诈骗方式：',
+        tabsize: 2,
+        lang:'zh-CN',
+        height: 150,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+      $('#summernote2').summernote({
+        placeholder: '请输入内容比如防骗手段：',
+        tabsize: 2,
+        lang:'zh-CN',
+        height: 150,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+      $.get("/type/searchliveorfraudtype",function (rs){
+        var proHtml = '';
+        proHtml += '<option value="0">请选择类型</option>';
+        for (var i = 0; i < rs.data.length; i++) {
+          proHtml += '<option value="' + rs.data[i].id + '">' + rs.data[i].type + '</option>';
+        }
+        $("#liveorfraudType").html(proHtml);
+        proHtml="";
+      });
+      $("#addimagebtn").bind("click",function (){
+        document.getElementById('fileToUpload').click();
+      });
+      $("#liveorfraudbtn").bind("click",function (){
+        if (!checksummernote1() || !checktitle() || !checksummernote2()){
+          $("#liveorfraudfrom").removeClass("was-validated");
+          return false;
+        }
+        var imagePathStr = "";
+        for (var imagePath in imagePathArray) {
+          if (imagePathStr.length > 0){
+            imagePathStr = imagePathStr + imagePathArray[imagePath] +",";
+          }else {
+            imagePathStr = imagePathArray[imagePath] +",";
+          }
+        }
+        var param = {
+          title     :$("#title").val(),
+          liveorfraudType : $("#liveorfraudType option:selected").text(),
+          summernote1:$("#summernote1").val(),
+          summernote2:$("#summernote2").val(),
+          imagePathStr:imagePathStr
+        };
+        $("#liveorfraudbtn").text("提交中...").attr("disabled","disabled").addClass("disabled");
+        $.post("/liveorfraud/liveorfraud",param,function(rs){
+          $("#liveorfraudbtn").text("提交").attr("disabled",false).removeClass("disabled");
+          if(rs.code != 200){
+            $("#liveorfraudfrom").removeClass("was-validated");
+            $("#title").val("");
+            $("#liveorfraudType").val("0");
+            $("#summernote1").val("");
+            $("#summernote2").val("");
+            $("#imagearray").html("<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>");
+            count = 1;
+            imageCount = 0;
+            imagePathArray = null;
+            checktitle();
+            checksummernote1();
+            checksummernote2();
+            $("#error").show();
+            $("#message").hide();
+          }else{
+            $("#error").hide();
+            $("#liveorfraudfrom").hide();
+            $("#message").show();
+            setTimeout(function () {
+              location.href="/huzhu/liveorfraud";
+            },5000);
+          }
+        });
+      });
+    })
+
+    $("#nav-fraud-tab").bind("click",function (){
+      count = 1;
+      imageCount = 0;
+      var proHtml ="";
+      proHtml += "<div class=\"col-md-3\"><br></div>\n" + "<h4 class=\"mb-3 text-md-center\">发布骗子</h4>\n" + "<div id=\"error\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label id=\"errorlabel\" class=\"text-error\">发布失败，注意是否已验证账户</label>\n" + "</div>\n" + "<div id=\"message\" class=\"text-md-center\" style=\"display: none;\">\n" + "<label>发布成功，等待返回</label>\n" + "</div>\n" + "<form class=\"needs-validation\" id=\"fraudfrom\" onsubmit=\"return false;\" enctype=\"multipart/form-data\" novalidate>\n" + "<div class=\"row g-3\" style=\"margin-left: 10% !important; margin-right: 10% !important;\">\n" + "<hr class=\"my-4\">\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"title\" placeholder=\"\">\n" + "<label for=\"title\">请输入标题</label>\n" + "<div class=\"invalid-feedback\">\n" + " 请输入标题\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"fraudName\" placeholder=\"\">\n" + "<label for=\"fraudName\">请输入被骗人昵称</label>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<select class=\"form-select\" id=\"fraudType\">\n" + "<option value=\"\">请选择诈骗类型</option>\n" + "</select>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"amount\" placeholder=\"\">\n" + "<label for=\"amount\">请输入被骗金额</label>\n" + "<div class=\"invalid-feedback\">\n" + "请输入数字型金额\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"fraudMethod\" placeholder=\"\">\n" + "<label for=\"fraudMethod\">请输入诈骗手段</label>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<div class=\"col-12 row\">\n" + "<div class=\"col-sm-6\">\n" + "<select class=\"form-select\" id=\"area\">\n" + "<option value=\"0\">请选择区域</option>\n" + "</select>\n" + "</div>\n" + "<div class=\" col-sm-6\">\n" + "<select class=\"form-select\" id=\"city\">\n" + "<option value=\"0\">请选择城市</option>\n" + "</select>\n" + "</div>\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<input type=\"input\" class=\"form-control rounded-3\" id=\"contact\" placeholder=\"\">\n" + "<label for=\"contact\">请输入骗子联系方式</label>\n" + "</div>\n" + "<div class=\"form-floating  col-12\">\n" + "<textarea class=\"form-control rounded-3\" id=\"summernote\" placeholder=\"请输入具体内容：\"></textarea>\n" + "<div class=\"invalid-feedback\">\n" + "请输入具体内容\n" + "</div>\n" + "</div>\n" + "<div class=\"form-floating col-12\">\n" + "<div class=\"row col-12\" id=\"imagearray\">\n" + "<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>\n" + "</div>\n" + "<input type=\"file\" id=\"fileToUpload\" style=\"display: none;\" onchange=\"uploadFile()\">\n" + "</div>\n" + "<hr class=\"my-4\">\n" + "<button class=\"w-100 btn btn-primary btn-lg\" id=\"fraudbtn\">提交</button>\n" + "</div>\n" + "</form>\n" + "<div class=\"col-md-3\"><br></div>";
+      $("#content").html(proHtml);
+      $('#summernote').summernote({
+        placeholder: '请输入具体内容：',
+        tabsize: 2,
+        lang:'zh-CN',
+        height: 150,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+      $.get("/resources/json/japaneseAdress.json", function (data) {
+        var proHtml = '';
+        proHtml += '<option value="0">请选择区域</option>';
+        for (var i = 0; i < data.length; i++) {
+          proHtml += '<option value="' + data[i].code + '">' + data[i].name + '</option>';
+        }
+        $("#area").html(proHtml);
+        proHtml="";
+      });
+      $("#area").bind("change",function (){
+        var proHtml = '';
+        $.get("/resources/json/japaneseAdress.json", function (data) {
+
+          proHtml += '<option value="0">请选择城市</option>';
+          for (var i = 0; i < data.length; i++) {
+            if (data[i].code == $("#area").val()){
+              var citydata = data[i].childs;
+              for (let j = 0; j < citydata.length; j++) {
+                proHtml += '<option value="' + citydata[j].code + '">' + citydata[j].name + '</option>';
+              }
+            }
+          }
+          $("#city").html(proHtml);
+          proHtml="";
+        })
+      });
+
+      $.get("/type/searchfraudtype",function (rs){
+        var proHtml = '';
+        proHtml += '<option value="0">请选择类型</option>';
+        for (var i = 0; i < rs.data.length; i++) {
+          proHtml += '<option value="' + rs.data[i].id + '">' + rs.data[i].type + '</option>';
+        }
+        $("#fraudType").html(proHtml);
+        proHtml="";
+      });
+      $("#addimagebtn").bind("click",function (){
+        document.getElementById('fileToUpload').click();
+      });
+      $("#fraudbtn").bind("click",function (){
+        if (!checksummernote() || !checktitle() || !checkamount()){
+          $("#fraudfrom").removeClass("was-validated");
+          return false;
+        }
+        var imagePathStr = "";
+        for (var imagePath in imagePathArray) {
+          if (imagePathStr.length > 0){
+            imagePathStr = imagePathStr + imagePathArray[imagePath] +",";
+          }else {
+            imagePathStr = imagePathArray[imagePath] +",";
+          }
+        }
+        var param = {
+          title     :$("#title").val(),
+          fraudName:$("#fraudName").val(),
+          area      : $("#area option:selected").text(),
+          city      : $("#city option:selected").text(),
+          fraudType: $("#fraudType option:selected").text(),
+          contact   :$("#contact").val(),
+          amount   :$("#amount").val(),
+          fraudMethod   :$("#fraudMethod").val(),
+          summernote:$("#summernote").val(),
+          imagePathStr:imagePathStr
+        };
+        $("#fraudbtn").text("提交中...").attr("disabled","disabled").addClass("disabled");
+        $.post("/fraud/fraud",param,function(rs){
+          $("#fraudbtn").text("提交").attr("disabled",false).removeClass("disabled");
+          if(rs.code != 200){
+            $("#fraudfrom").removeClass("was-validated");
+            $("#title").val("");
+            $("#amount").val("");
+            $("#fraudMethod").val("");
+            $("#fraudName").val("");
+            $("#fraudType").val("0");
+            $("#area").val("0");
+            $("#city").val("0");
+            $("#contact").val("");
+            $("#summernote").val("");
+            $("#imagearray").html("<div class=\"col-sm-2\" id=\"addimage\">\n" + "<button class=\"btn btn-primary\" id=\"addimagebtn\" style=\"width: 100px;height: 100px;\">添加图片</button>\n" + "</div>");
+            count = 1;
+            imageCount = 0;
+            imagePathArray = null;
+            checktitle();
+            checksummernote();
+            $("#error").show();
+            $("#message").hide();
+          }else{
+            $("#error").hide();
+            $("#fraudfrom").hide();
+            $("#message").show();
+            setTimeout(function () {
+              location.href="/huzhu/fraud";
+            },5000);
+          }
+        });
+      });
+    });
+    function checkamount() {
+      if ( $("#amount").val().length > 0 && !/^\d+\.\d+$/.test( $("#amount").val()) && !/^\d+$/.test( $("#amount").val())){
+        $("#amount").removeClass("is-valid");
+        $("#amount").addClass("is-invalid");
+        return false;
+      }
+      $("#amount").addClass("is-valid");
+      $("#amount").removeClass("is-invalid");
+      return true;
+    }
+    function checktitle() {
+      if ($("#title").val().length <= 0){
+        $("#title").removeClass("is-valid");
+        $("#title").addClass("is-invalid");
+        return false;
+      }
+      $("#title").addClass("is-valid");
+      $("#title").removeClass("is-invalid");
+      return true;
+    }
+    function checksummernote() {
+      if ($("#summernote").val().length <= 0){
+        $("#summernote").removeClass("is-valid");
+        $("#summernote").addClass("is-invalid");
+        return false;
+      }
+      $("#summernote").addClass("is-valid");
+      $("#summernote").removeClass("is-invalid");
+      return true;
+    }
+    function checksummernote1() {
+      if ($("#summernote1").val().length <= 0){
+        $("#summernote1").removeClass("is-valid");
+        $("#summernote1").addClass("is-invalid");
+        return false;
+      }
+      $("#summernote1").addClass("is-valid");
+      $("#summernote1").removeClass("is-invalid");
+      return true;
+    }
+    function checksummernote2() {
+      if ($("#summernote2").val().length <= 0){
+        $("#summernote2").removeClass("is-valid");
+        $("#summernote2").addClass("is-invalid");
+        return false;
+      }
+      $("#summernote2").addClass("is-valid");
+      $("#summernote2").removeClass("is-invalid");
+      return true;
+    }
+
+    function uploadFile() {
+      var fileInput = document.getElementById("fileToUpload");
+      var file = fileInput.files[0];
+      if (file.type.indexOf('image') === -1) {
+        alert('请选择图片文件！');
+        return;
+      }
+      var formData = new FormData();
+      formData.append("file", file);
+      fetch('/resort/upload?time='+new Date(), {method: 'POST', body: formData})
+              .then(response => response.text())
+              .then(result => {
+                rs = JSON.parse(result);
+                if (rs.isError == "true"){
+                  alert("图片上传错误");
+                }else {
+                  imageCount = imageCount + 1;
+                  var str ="imagepath" + count;
+                  imagePathArray[str] = rs.path;
+                  $("#addimage").before("<div  class=\"col-sm-2 " + str + "\">\n" + "<img src=\"" + rs.path + "\" style='width: 100px;height: 100px;'>\n" + "</div>");
+                  $("."+str).bind("click",function (){
+                    $("."+str).remove();
+                    imagePathArray[str] = "";
+                    imageCount = imageCount -1;
+                    if (imageCount <= 11){
+                      $("#addimage").show();
+                    }
+                  });
+                  if (imageCount > 11){
+                    $("#addimage").hide();
+                  }
+                  count = count + 1;
+                }
+              }).catch(error => {
+        alert("图片上传错误");
+      });
+    }
+    $("#nav-resort-tab").click();
+
+  </script>
+</html>
